@@ -1,0 +1,286 @@
+/* Header */
+.barra-navegacion {
+  padding: 1rem 0;
+  justify-content: space-between; /* Distribuye logo y menú */
+  background-color: #60a5ff;
+}
+.body {
+  font-family: "poppins", sans-serif;
+}
+.barra-principal {
+  gap: 3rem; /* Espacio entre los enlaces */
+}
+
+.lista-navegacion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.5rem;
+}
+
+.item-navegacion {
+  margin: 0;
+}
+
+.enlace-navegacion {
+  text-decoration: none;
+  color: #343a40; /* Gris oscuro */
+  font-weight: 500;
+}
+
+.enlace-navegacion:hover {
+  color: #007bff; /* Azul */
+}
+
+/* Botón */
+.boton-primario {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.boton-primario:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+.logo {
+  width: 100px;
+  height: auto;
+}
+.carrusel-destacado .carousel-caption {
+  background-color: rgba(211, 211, 211, 0.6); /* Fondo semitransparente negro */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  color: white; /* Color del texto */
+  max-width: 60%; /* Ancho máximo del contenedor */
+  margin-left: 20px; /* Espaciado desde el borde izquierdo */
+
+  /* NUEVAS PROPIEDADES PARA CENTRAR EL TEXTO */
+  display: flex; /* Habilitamos Flexbox */
+  flex-direction: column; /* Alineamos en columna (título arriba, párrafo abajo) */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.carrusel-destacado img {
+  height: 500px; /* Ajusta a la altura que prefieras */
+  object-fit: cover; /* Mantiene la proporción de las imágenes */
+}
+
+.carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+.odontologia-calidad {
+  background-color: #FAF3E0; /* Fondo claro */
+  padding: 60px 0;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Asegura que los divs tengan la misma altura */
+}
+
+.informacion-item {
+  background-color: #29a119;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Efecto de hover */
+  background-color: #f9f9f9; /* Fondo claro */
+}
+
+.informacion-item:hover {
+  transform: scale(1.05); /* Efecto de aumento */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
+
+.icono {
+  color: #007bff; /* Color del icono */
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+.icono:hover {
+  color: chartreuse; /* Cambio de color al pasar el mouse */
+}
+
+.informacion-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333; /* Color de texto */
+}
+
+.informacion-item p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #666; /* Color de texto */
+}
+
+.contenedor-carrusel {
+  padding: 20px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(57, 57, 57, 0.1);
+
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Alineamos el contenido hacia la parte inferior */
+  align-items: flex-start;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 240px; /* Ancho de la tarjeta */
+  height: 340px; /* Alto de la tarjeta */
+  position: relative; /* Necesario para posicionar el título */
+  overflow: hidden; /* Asegura que el contenido no se desborde de la tarjeta */
+  background-color: transparent; /* Evitamos que el fondo cubra la imagen */
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.imagen-tratamiento {
+  width: 100%; /* Se asegura de que ocupe todo el ancho de la tarjeta */
+  height: 100%; /* Se asegura de que ocupe toda la altura de la tarjeta */
+  object-fit: cover; /* La imagen se recorta y cubre todo el contenedor */
+  position: absolute; /* La imagen se coloca de fondo */
+  top: 0;
+  left: 0;
+  z-index: 0; /* Nos aseguramos de que la imagen quede al fondo */
+  opacity: 1; /* Asegura que la imagen siempre esté visible */
+}
+.text-center{
+    padding: 25px;
+}
+
+.nombre-tratamiento {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative; /* Necesario para posicionar el texto sobre la imagen */
+  z-index: 1; /* Asegura que el texto esté encima de la imagen */
+  padding: 10px; /* Solo aplica padding vertical, sin padding izquierdo ni derecho */
+  background-color: rgba(3, 97, 186, 0.6); /* Fondo semitransparente */
+  color: white;
+  border-radius: 5px;
+  margin: 0; /* Eliminamos cualquier margen extra */
+  text-align: left; /* Alineamos el texto a la izquierda */
+  width: auto; /* Ajustamos el ancho al contenido del texto */
+  display: block; /* Asegura que el fondo cubra solo el área del texto */
+}
+
+.contacto {
+  padding: 3rem 20px; /* Añadir espacio a los lados */
+  background-color: #e7e7e7;
+}
+
+.contacto .contenedor {
+  padding-right: 20px; /* Ajuste específico de padding a la derecha */
+}
+
+.contacto h3 {
+  font-size: 1.5rem; /* Título más pequeño */
+  color: #333;
+  margin-bottom: 20px;
+}
+.logo-contact {
+  width: 350px;
+}
+
+form .form-label {
+  font-size: 0.9rem; /* Subtítulos más pequeños */
+  font-weight: bold;
+}
+
+form .form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+form .row {
+  margin-bottom: 15px;
+}
+
+form .row .col-md-6 {
+  padding-right: 15px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block; /* Asegura que el botón sea un bloque en línea */
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Asegura que el logo no se desborde y se ajuste */
+.contacto .col-md-4 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Espacio entre las columnas */
+.contacto .col-md-8 {
+  padding-left: 20px;
+}
+
+/* Centra el botón */
+form .text-center {
+  text-align: center;
+}
+
+footer {
+  background-color: #60a5ff;
+  color: #f8f8f8;
+  font-size: 0.9rem;
+}
+
+footer h5 {
+  font-weight: bold;
+  padding: 18px;
+  color: #282626;
+}
+
+footer a {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+footer .border-end {
+  border-color: rgba(248, 249, 250, 0.2);
+}
